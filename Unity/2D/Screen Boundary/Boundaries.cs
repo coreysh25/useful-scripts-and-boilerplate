@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Boundaries : MonoBehaviour {
     public Camera MainCamera;
-    private Vector2 screenBounds;
+    [HideInInspector] public Vector2 screenBounds { get; set; }
+
     private float objectWidth;
     private float objectHeight;
 
